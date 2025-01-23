@@ -1,5 +1,7 @@
 /* Quicksand font set up */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 .quicksand-font {
   font-family: "Quicksand", serif;
@@ -8,13 +10,13 @@
 }
 
 /* Raleway font set up */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .raleway-font{
   font-family: "Raleway", serif;
   font-weight: 400;
   font-style: normal;
 }
+
 /* font set up completed */
 
 /* header styles here */
@@ -143,7 +145,8 @@
 }
 .curriculam-section{
     background-image: url(../assets/bg.png);
-    background-repeat: no-repeat;
+    background-repeat:repeat;
+    background-size: auto 25%;
     background-position-y: top;
     /* background-position-: center; */
 }
@@ -267,4 +270,140 @@
     color: rgb(15, 14, 14);
     background-color: #09b2fb;
     cursor: pointer;
+}
+/* our story section styles here */
+.our-story{
+    text-align: center;
+    margin: 60px auto 80px;
+    font-size: 2.85rem;
+    font-weight: bold;
+}
+.our-story-container-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.main-div-1{
+    border: 1px solid rgb(232, 229, 229);
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgb(243, 246, 247);
+}
+.main-div-1 img{
+    height: 330px; 
+    width: 100%; 
+    border-radius: 30px 30px 0 0; 
+}
+.main-div-2 img{
+    width: 290px;
+    height: 175px;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+}
+.main-div-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* border: 1px solid rgb(153, 151, 151); */
+    gap: 20px;
+    border-radius: 0 0 30px 30px;
+}
+
+.our-stories-textbox{
+    padding: 10px 20px 38px 20px;
+    
+}
+.story-details{
+    color: #666666;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 45px;
+}
+.story-timeline1{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #3CD8E8;
+    color: white;
+    width: 30%;
+    padding: 15px 10px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: -40px;
+    position: relative;
+}
+.story-timeline2{
+    font-size: 0.90rem;
+    font-weight: 500;
+    background-color: #95B226;
+    color: white;
+    width: 50%;
+    padding: 15px 10px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    margin: -30px auto 0;
+}
+.story-timeline3{
+    font-size: 0.90rem;
+    font-weight: 500;
+    background-color: #0538e1;
+    color: white;
+    width: 50%;
+    padding: 15px 10px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    margin: -30px auto 0;
+}
+.story-timeline4{
+    font-size: 0.90rem;
+    font-weight: 500;
+    background-color: #b107f4;
+    color: white;
+    width: 50%;
+    padding: 15px 10px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    margin: -30px auto 0;
+}
+.story-timeline5{
+    font-size: 0.90rem;
+    font-weight: 500;
+    background-color: #f39406;
+    color: white;
+    width: 50%;
+    padding: 15px 10px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    margin: -30px auto 0;
+}
+
+.story-title2{
+    margin: 20px 55px 34px 36px;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+.story-title1{
+    font-size: 1.24rem;
+    font-weight: 700;
+}
+.textbox-1{
+    /* background-color: white; */
+    
+}
+.our-story-section{
+    background-image: url(../assets/bg.png);
+    background-repeat: repeat;
+    background-size: auto 25%;
+    margin-bottom: 100px;
+    /* opacity: 0.8; */
+}
+.textbox-2 {
+    /* width:calc(100% - 5px)/4; */
+    border: 1px solid rgb(232, 229, 229);
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgb(243, 246, 247);
+}
+.timeline-3{
+    color: #120e06;
 }

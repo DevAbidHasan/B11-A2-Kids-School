@@ -241,3 +241,30 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
+/* two icons design */
+.two-icons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 50px auto 60px;
+}
+.fa-angle-left{
+    font-size: 40px;
+}
+.fa-angle-right{
+    font-size: 40px;
+    
+}
+.fa-solid{
+    background-color: orange;
+    color: white;
+    /* background-size: cover; */
+    padding: 7px 15px;
+    border-radius: 50px;
+}
+.fa-solid:hover{
+    /* transition: 0.5s; */
+    color: rgb(15, 14, 14);
+    background-color: #09b2fb;
+    cursor: pointer;
+}

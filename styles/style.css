@@ -1,0 +1,243 @@
+/* Quicksand font set up */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Raleway font set up */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway-font{
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* font set up completed */
+
+/* header styles here */
+/* 1. navbar design styles */
+.header,
+.main 
+{
+    max-width: 1300px;
+    margin: 10px auto;
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 3rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.navbar-menu{
+    display: flex;
+    /* gap: 2.5rem; */
+}
+.contact-btn{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.nav-title-school{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.navbar-logo img{
+    max-width: 100%;
+    height: 60px;
+    width: 60px;
+}
+#Home{
+    color: orange;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+#About{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: skyblue;
+}
+#Facilities{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #05D4DF;
+}
+#Admission{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #5D58EF;
+}
+/* 2. Banner/Hero section design */
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10px; */
+    margin: 0 auto;
+    /* max-width: 100%; */
+}
+.banner-text{
+    width: 640px;
+}
+.banner-image{
+    width: 460px;
+    /* width: 100%; */
+}
+.enroll-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+#empowering{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: orange;
+}
+#students-from-small{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: black;
+}
+#vision{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: skyblue;
+    margin-bottom: 24px;
+
+}
+.banner-description{
+    font-weight: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+/* standard curriculam part */
+.curriculam-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 0 auto;
+}
+.curriculam-section{
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    /* background-position-: center; */
+}
+
+.curriculam-item{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(204, 206, 206);
+    padding: 10px;
+    border-radius: 18px;
+    width: 365px;
+    height: 430px;
+    margin-bottom: 50px;
+    /* background: linear-gradient(red, green); */
+}
+.card-1{
+    background:linear-gradient(#DEF5FF,white);
+    /* box-shadow: 10px 10px 5px 0.93 rgba(11, 11, 11, 0.05); */
+}
+.card-1:hover{
+    background: linear-gradient(rgb(120, 239, 188),white);
+    cursor: pointer;
+    border: 1px solid rgb(66, 71, 58);
+    transition: 2s;
+}
+.card-2{
+    background: linear-gradient(rgba(255, 244, 220, 1), white);
+}
+.card-2:hover{
+    background: linear-gradient(rgb(208, 235, 110),white);
+    cursor: pointer;
+    border: 1px solid rgb(66, 71, 58);
+    transition: 2s;
+}
+.card-3{
+    background: linear-gradient(#F2E8FF, white);
+}
+.card-3:hover{
+    background: linear-gradient(rgb(184, 148, 228),white);
+    cursor: pointer;
+    border: 1px solid rgb(66, 71, 58);
+    transition: 2s;
+}
+.read-1{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #64C8FF;
+}
+.read-1:hover{
+    font-weight: 700;
+    /* font-size: 1.7rem; */
+    color: black;
+}
+.read-2{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #F0AA00;
+}
+.read-2:hover{
+    font-weight: 700;
+    /* font-size: 1.7rem; */
+    color: black;
+}
+.read-3{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #8700FF;
+}
+.read-3:hover{
+    font-weight: 700;
+    /* font-size: 1.7rem; */
+    color: black;
+}
+.curriculam-item img{
+    /* max-width: 100%; */
+    width: 130px;
+    height: 130px;
+}
+.curriculam-top-heading{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    font-weight: 700;
+    font-size: 2.9rem;
+}
+.curriculam-details{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #808080;
+}
+.curriculam-item-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+}

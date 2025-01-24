@@ -22,11 +22,17 @@
 /* header styles here */
 /* 1. navbar design styles */
 .header,
-.main 
+.main,
+footer
 {
     max-width: 1300px;
     margin: 10px auto;
 }
+
+body{
+    background-color: whitesmoke;
+}
+
 .navbar ul li{
     list-style: none;
     margin-right: 3rem;
@@ -58,6 +64,11 @@
     font-weight: 500;
     font-size: 1.25rem;
 }
+.contact-btn:hover{
+    background-color: black;
+    transition: 0.4s;
+    cursor: pointer;
+}
 .nav-title-school{
     font-size: 2rem;
     font-weight: 700;
@@ -72,20 +83,56 @@
     font-size: 1.25rem;
     font-weight: 500;
 }
+#Home:hover{
+    padding-bottom: 5px;
+    /* text-underline-offset: 2px; */
+    /* display: inline-block; */
+    border-bottom: 3px solid red;
+    transition: 0.1s;
+    color: black;
+    
+}
 #About{
     font-size: 1.25rem;
     font-weight: 500;
     color: skyblue;
+}
+#About:hover{
+    padding-bottom: 5px;
+    /* text-underline-offset: 2px; */
+    /* display: inline-block; */
+    border-bottom: 3px solid red;
+    transition: 0.1s;
+    color: black;
+    
 }
 #Facilities{
     font-size: 1.25rem;
     font-weight: 500;
     color: #05D4DF;
 }
+#Facilities:hover{
+    padding-bottom: 5px;
+    /* text-underline-offset: 2px; */
+    /* display: inline-block; */
+    border-bottom: 3px solid red;
+    transition: 0.1s;
+    color: black;
+    
+}
 #Admission{
     font-size: 1.25rem;
     font-weight: 500;
     color: #5D58EF;
+}
+#Admission:hover{
+    padding-bottom: 5px;
+    /* text-underline-offset: 2px; */
+    /* display: inline-block; */
+    border-bottom: 3px solid red;
+    transition: 0.1s;
+    color: black;
+    
 }
 /* 2. Banner/Hero section design */
 
@@ -93,9 +140,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 10px; */
     margin: 0 auto;
-    /* max-width: 100%; */
 }
 .banner-text{
     width: 640px;
@@ -105,13 +150,19 @@
     /* width: 100%; */
 }
 .enroll-btn{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     border: none;
     font-size: 1.25rem;
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 12px;
+}
+.enroll-btn:hover{
+    background-color: #8d9294;
+    cursor: pointer;
+    /* transition: 0.3s; */
+    /* color: black; */
 }
 #empowering{
     font-size: 3.5rem;
@@ -146,7 +197,7 @@
 .curriculam-section{
     background-image: url(../assets/bg.png);
     background-repeat:repeat;
-    background-size: auto 25%;
+    background-size: auto 100%;
     background-position-y: top;
     /* background-position-: center; */
 }
@@ -272,11 +323,22 @@
     cursor: pointer;
 }
 /* our story section styles here */
+.hidden-box{
+    display: none;
+}
+.hidden-bar-for-mobile{
+    display: none;
+}
+
 .our-story{
     text-align: center;
     margin: 60px auto 80px;
     font-size: 2.85rem;
     font-weight: bold;
+    background: url(../assets/bg.png);
+    background-repeat: repeat-y;
+    background-size: auto 50%;
+   
 }
 .our-story-container-div{
     display: grid;
@@ -286,7 +348,8 @@
 .main-div-1{
     border: 1px solid rgb(232, 229, 229);
     border-radius: 30px 30px 30px 30px;
-    background-color: rgb(243, 246, 247);
+    background-color: white;
+    /* rgb(243, 246, 247); */
 }
 .main-div-1 img{
     height: 330px; 
@@ -377,7 +440,6 @@
     position: relative;
     margin: -30px auto 0;
 }
-
 .story-title2{
     margin: 20px 55px 34px 36px;
     font-size: 0.95rem;
@@ -387,23 +449,191 @@
     font-size: 1.24rem;
     font-weight: 700;
 }
-.textbox-1{
-    /* background-color: white; */
-    
-}
+
 .our-story-section{
     background-image: url(../assets/bg.png);
     background-repeat: repeat;
     background-size: auto 25%;
     margin-bottom: 100px;
-    /* opacity: 0.8; */
 }
 .textbox-2 {
-    /* width:calc(100% - 5px)/4; */
     border: 1px solid rgb(232, 229, 229);
     border-radius: 30px 30px 30px 30px;
-    background-color: rgb(243, 246, 247);
+    background-color: white;
 }
 .timeline-3{
     color: #120e06;
+}
+.view-all-container{
+    display: flex;
+    justify-content: center;
+}
+.view-all{
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 12px;
+    border: none;
+    /* justify-items: center; */
+    margin: 70px auto 0;
+}
+.view-all:hover{
+    transition: 0.3s;
+    /* border: 1px solid black; */
+    background-color: rgb(130, 130, 133);
+    cursor: pointer;
+    color:white;
+}
+/* footer menu styles */
+footer{
+    height: 520px;
+    max-width: 100%;
+    background-color: #01ACFD;
+    margin-top: -60px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-top: 190px; this is a deleted line */
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.footer-left{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 50px;
+}
+.footer-left-container{
+    /* margin-left: 50px; */
+    /* margin-right: 20px; */
+}
+.footer-left img{
+    max-width:100%;
+    height: 82px;
+    width: 82px;
+}
+.footer-left-title{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: white;
+}
+.footer-description{
+    font-size: 1.25rem;
+    font-weight:400;
+    color: white  ;
+}
+.footer-middle{
+    /* margin-left: -50px; */
+    /* margin-right: 80px; */
+    color: white;
+    margin-top: 50px;
+}
+.footer-middle-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.footer-middle p{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.footer-middle a{
+    text-decoration: none;
+    color: white;
+}
+.footer-middle a:hover{
+    color:rgb(9, 9, 9);
+    padding-bottom: 5px;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid rgb(10, 10, 10);
+}
+.footer-right-container{
+    margin-top: 60px;
+    /* margin-left: -100px; 
+    margin-right: 80px; */
+}
+.footer-right-message{
+    color: white;
+    font-size: 1.52rem;
+}
+.footer-right-image-container{
+    display: flex;
+    gap: 10px;
+    /* margin-right: 50px; */
+}
+.hidden-text{
+    display: none;
+}
+/*  */
+/*  */
+/* mobile responsive styles */
+@media screen and (max-width:576px) {
+    /* display:none */
+    .nav-title-school,
+    .navbar-menu,
+    .contact-btn,
+    .two-icons,
+    .main-div-1,
+    .banner-description
+    {
+        display: none;
+    }
+    .hidden-bar-for-mobile{
+        display: inline-block;
+        color: black;
+        font-size: 25px;
+        margin: 0 10px;
+        /* border-radius: 0; */
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    /* .banner-text-container, */
+    .banner-image img
+    {
+        height: auto;
+        width: 80%;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #empowering, #students-from-small, #vision{
+        text-align: center; 
+        font-size: 2rem;
+    }
+     .banner-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .banner-description,
+     .enroll-btn{
+        text-align: center;
+     }
+
+     .hidden-text{
+        display: block;
+     }
+     .curriculam-top-heading{
+        font-size: 1.62rem;
+     }
+     .curriculam-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+     }
+     .hidden-box{
+        display: block;
+     }
+     .textbox-2{
+        width: 100%;
+        width: 175px;
+     }
+     .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        width: 100%;
+     }
 }

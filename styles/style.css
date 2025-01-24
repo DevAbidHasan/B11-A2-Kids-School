@@ -498,6 +498,7 @@ footer{
     /* margin-top: 190px; this is a deleted line */
     margin-bottom: 10px;
     padding: 0 10px;
+    /* background-color: var(#01ACFD;); */
 }
 .footer-left{
     display: flex;
@@ -581,7 +582,7 @@ footer{
     }
     body{
         /* max-width: 100%; */
-        max-width: 390px;
+        /* max-width: 390px; */
     }
     .navbar-logo img{
         margin-left: 20px;
@@ -696,4 +697,15 @@ footer{
         /* margin-left: 40px; */
         padding: 20px 70px;
      }
+}
+@media screen and (width=412px)
+{
+    .banner-image
+    {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 57px;
+    }
 }

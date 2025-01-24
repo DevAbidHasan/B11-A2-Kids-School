@@ -579,25 +579,34 @@ footer{
     {
         display: none;
     }
+    body{
+        /* max-width: 100%; */
+        max-width: 390px;
+    }
+    .navbar-logo img{
+        margin-left: 20px;
+    }
     .hidden-bar-for-mobile{
         display: inline-block;
         color: black;
         font-size: 25px;
-        margin: 0 10px;
+        /* margin: 0 10px; */
         /* border-radius: 0; */
+        margin-right: -120px;
+        margin-top: 10px;
     }
     .banner{
         flex-direction: column-reverse;
         text-align: center;
     }
     /* .banner-text-container, */
-    .banner-image img
+    .banner-image
     {
         height: auto;
-        width: 80%;
-        position: relative;
+        width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-left: 30px;
     }
     #empowering, #students-from-small, #vision{
         text-align: center; 
@@ -612,28 +621,79 @@ footer{
      .enroll-btn{
         text-align: center;
      }
-
+     .banner-main-headline-text{
+        width: 100%;
+        margin-left: 60px;
+     }
+     .banner-description{
+        font-size: 0.95rem;
+        margin-left: 120px;
+     }
+     .enroll-btn{
+        margin-left: 140px;
+        padding: 20px 30px;
+     }
+    .our-story{
+        margin-left: 70px;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
      .hidden-text{
         display: block;
      }
      .curriculam-top-heading{
         font-size: 1.62rem;
+        width: 100%;
+        margin-left: 67px;
      }
+        .curriculam-item{
+            padding-top: 50px;
+        }
      .curriculam-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        width: 70%;
      }
      .hidden-box{
         display: block;
      }
+     .main-div-2{
+        width: 100%;
+        gap: 10px;
+        margin-left: 35px;
+
+     }
+     .story-title2{
+        font-size: 0.52rem;
+     }
      .textbox-2{
         width: 100%;
-        width: 175px;
+        width: 205px;
+        height: 300px;
+        margin-bottom: 20px;
+     }
+     .view-all{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 50%;
+        padding: 20px 10px;
+        margin-left: 160px;
+
+     }
+     .mobile-responsive-timeline{
+        font-size: 0.5rem;
+        padding: 8px 10px;
+        margin-top: -18px;
      }
      .footer{
         display: grid;
         grid-template-columns: 1fr;
         height: 100%;
         width: 100%;
+        /* max-width: 1000px; */
+        /* margin-right: -50px; */
+        /* margin-left: 40px; */
+        padding: 20px 70px;
      }
 }
